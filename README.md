@@ -7,7 +7,7 @@ Fresco's iOS design system, distributed as a pre-compiled XCFramework.
 ```swift
 // Package.swift
 dependencies: [
-    .package(url: "https://github.com/dropkitchen/fresco-pantry-swift", from: "0.2.0")
+    .package(url: "https://github.com/dropkitchen/fresco-pantry-swift", "0.2.0" ..< "0.3.0")
 ],
 targets: [
     .target(name: "YourApp", dependencies: [
@@ -15,6 +15,10 @@ targets: [
     ])
 ]
 ```
+
+Below `1.0.0`, a minor release is where we reserve the right to break you, so the range stops at
+the next minor rather than the next major — widen it deliberately, once you've tested against
+`0.3.0`, not before.
 
 In Xcode: **File → Add Package Dependencies…** and paste
 `https://github.com/dropkitchen/fresco-pantry-swift`.
@@ -61,6 +65,13 @@ Each release records its artifact size, SHA-256 checksum and build toolchain in
 **A published tag is never deleted or re-pointed.** SwiftPM caches resolved artifacts by checksum, so
 replacing the bytes behind a tag would break every consumer already pinned to it. A bad release is
 superseded by a new patch version and marked as superseded in the changelog.
+
+The one dated exception: on 2026-08-13, `v1.0.1` and `v1.0.2` were deleted outright and the same
+source republished as `v0.2.0`, rather than superseded. That was safe only because no consumer
+outside Fresco had resolved either tag yet — the changelog's dated entries show the release history
+jumping straight from `v0.1.0` (2026-08-11) to `v0.2.0` (2026-08-13), with nothing published in
+between. The absolute guarantee above resumes the moment the first partner integrates against a tag:
+from then on, nothing is ever deleted or re-pointed again.
 
 ## Troubleshooting
 
