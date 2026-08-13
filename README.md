@@ -62,16 +62,10 @@ without a major bump.
 Each release records its artifact size, SHA-256 checksum and build toolchain in
 [CHANGELOG.md](CHANGELOG.md).
 
-**A published tag is never deleted or re-pointed.** SwiftPM caches resolved artifacts by checksum, so
-replacing the bytes behind a tag would break every consumer already pinned to it. A bad release is
-superseded by a new patch version and marked as superseded in the changelog.
-
-The one dated exception: on 2026-08-13, `v1.0.1` and `v1.0.2` were deleted outright and the same
-source republished as `v0.2.0`, rather than superseded. That was safe only because no consumer
-outside Fresco had resolved either tag yet — the changelog's dated entries show the release history
-jumping straight from `v0.1.0` (2026-08-11) to `v0.2.0` (2026-08-13), with nothing published in
-between. The absolute guarantee above resumes the moment the first partner integrates against a tag:
-from then on, nothing is ever deleted or re-pointed again.
+**Once a tag has been resolved by anyone outside Fresco, it is never deleted or re-pointed.**
+SwiftPM caches resolved artifacts by checksum, so replacing the bytes behind a tag would break every
+consumer already pinned to it. A bad release is superseded by a new patch version and marked as
+superseded in the changelog.
 
 ## Troubleshooting
 
