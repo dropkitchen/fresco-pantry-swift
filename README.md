@@ -7,7 +7,7 @@ Fresco's iOS design system, distributed as a pre-compiled XCFramework.
 ```swift
 // Package.swift
 dependencies: [
-    .package(url: "https://github.com/dropkitchen/fresco-pantry-swift", from: "0.0.1")
+    .package(url: "https://github.com/dropkitchen/fresco-pantry-swift", from: "0.2.0")
 ],
 targets: [
     .target(name: "YourApp", dependencies: [
