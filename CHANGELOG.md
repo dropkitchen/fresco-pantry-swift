@@ -75,3 +75,14 @@ behind a published tag breaks every consumer already pinned to it. Superseding i
 | Simulator slice |  83M |
 | Built with | Xcode 26.5 |
 | Kingfisher | 8.11.0 |
+
+## v0.3.1 — 2026-09-11
+
+| | |
+|---|---|
+| Checksum | `e7691ae8d4cd9d15fd8bef7a9186418a1224385a595cdb8b84e5d108ce21fb99` |
+| Zipped |  41M |
+| Device slice |  44M |
+| Simulator slice |  83M |
+| Built with | Xcode 26.5 |
+| Kingfisher | 8.11.0 |
