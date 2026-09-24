@@ -108,3 +108,15 @@ behind a published tag breaks every consumer already pinned to it. Superseding i
 | Simulator slice |  84M |
 | Built with | Xcode 26.5 |
 | Kingfisher | 8.11.0 |
+
+## v0.5.1 — 2026-09-24
+
+| | |
+|---|---|
+| Checksum | `36c9fdec481c4020acb6ac4d8ea848c91943e0a1a4fe3ed3045506d56cf0f15b` |
+| Zipped |  42M |
+| Device slice |  45M |
+| Simulator slice |  84M |
+| Built with | Xcode 26.5 |
+| Signed by | Apple Distribution: Adaptics Limited (RH9GNXSHK5) |
+| Kingfisher | 8.11.0 |
