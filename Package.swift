@@ -16,8 +16,8 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "Pantry",
-      url: "https://github.com/dropkitchen/fresco-pantry-swift/releases/download/v0.5.1/Pantry.xcframework.zip",
-      checksum: "36c9fdec481c4020acb6ac4d8ea848c91943e0a1a4fe3ed3045506d56cf0f15b"
+      url: "https://github.com/dropkitchen/fresco-pantry-swift/releases/download/v0.6.0/Pantry.xcframework.zip",
+      checksum: "adcf7b3d7441f141ca8021423e855ce7520e007e74f2176f13666ce190e0189c"
     )
   ]
 )
