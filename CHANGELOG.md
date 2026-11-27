@@ -252,3 +252,15 @@ behind a published tag breaks every consumer already pinned to it. Superseding i
 | Built with | Xcode 27.2 |
 | Signed by | Apple Distribution: Adaptics Limited (RH9GNXSHK5) |
 | Kingfisher | 8.11.0 |
+
+## v3.1.0 — 2026-11-27
+
+| | |
+|---|---|
+| Checksum | `2a5da10dbd3a06fd9a626fec90f2e0cff17172dc800a90c3c73da9d0dfbcac88` |
+| Zipped |  36M |
+| Device slice |  40M |
+| Simulator slice |  75M |
+| Built with | Xcode 27.2 |
+| Signed by | Apple Distribution: Adaptics Limited (RH9GNXSHK5) |
+| Kingfisher | 8.11.0 |
